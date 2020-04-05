@@ -26,6 +26,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MainViewHolder holder, int position) {
         holder.textView.setText(data.get(position));
+        holder.result = holder.textView.getText().toString();
     }
 
     @Override
